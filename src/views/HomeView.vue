@@ -4,13 +4,13 @@
 
     <div class="box page1">
       <TopPage msg="Welcome to Your Vue.js App"/>
-
     </div>
-    <div class="box page3">
-      dummy text
-    </div>
-    <div class="box page3">
 
+    <div class="box page3">
+      <ReviewList/>
+    </div>
+
+    <div class="box page3">
       <EmailForm />
     </div>
   </div>
@@ -20,12 +20,14 @@
 // @ is an alias to /src
 import TopPage from '@/components/TopPage.vue'
 import EmailForm from '@/components/EmailForm.vue'
+import ReviewList from '@/components/ReviewList.vue'
 
 export default {
   name: 'HomeView',
   components: {
     TopPage,
-    EmailForm
+    EmailForm,
+    ReviewList
   },
   data: function () {
     return {

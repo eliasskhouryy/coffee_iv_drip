@@ -5,7 +5,6 @@
         <p> Coffee IV drip delivered straight to your door. </p>
         <p> How does it work? </p>
       </section>
-
         <label> Full Name </label>
         <input type="text" placeholder="John Jones" v-model="name" required />
         <label> Email: </label>
