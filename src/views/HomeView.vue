@@ -13,6 +13,14 @@ export default {
   name: 'HomeView',
   components: {
     HelloWorld
-  }
+  },
+  data: function () {
+    return {
+      variable1: '',
+    }
+  },
+  methods: {
+    
+  },
 }
 </script>
