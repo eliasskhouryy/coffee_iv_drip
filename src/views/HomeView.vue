@@ -10,8 +10,8 @@
       dummy text
     </div>
     <div class="box page3">
-      fummy text
 
+      <EmailForm />
     </div>
   </div>
 </template>
@@ -19,21 +19,22 @@
 <script>
 // @ is an alias to /src
 import TopPage from '@/components/TopPage.vue'
+import EmailForm from '@/components/EmailForm.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    TopPage
+    TopPage,
+    EmailForm
   },
   data: function () {
     return {
       variable1: '',
     }
   },
-  methods: {
-    
-  },
 }
+
+
 </script>
 
 <style lang="scss">
