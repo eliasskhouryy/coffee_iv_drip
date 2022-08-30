@@ -34,12 +34,14 @@ export default {
 	},
 	methods: {
 		onSubmit: function () {
+			this.$gtag.event('sign-up')
 			db.collection('users')
 				.add({
 					name: this.name,
 					email: this.email,
 				})
 				.then((this.email = ''), (this.name = ''));
+				alert("sign up successful");
 		},
 	},
 };

@@ -35,6 +35,7 @@ export default {
 		EmailForm,
 		ReviewList,
 		WheelSection,
+		DripListInfo,
 	},
 	data: function () {
 		return {
