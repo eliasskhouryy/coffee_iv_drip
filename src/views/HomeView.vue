@@ -1,7 +1,15 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="box page1">
+      <HelloWorld msg="Welcome to Your Vue.js App"/>
+    </div>
+    <div class="box page3">
+      dummy text
+    </div>
+    <div class="box page3">
+      fummy text
+    </div>
+    
   </div>
 </template>
 
@@ -24,3 +32,15 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+
+  .home {
+
+    .box {
+      height: 100vh;
+      max-width: 100vw;
+    }
+  }
+  
+</style>
