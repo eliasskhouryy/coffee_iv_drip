@@ -1,11 +1,16 @@
 <template>
 	<div class="Review">
-		<h3>Reviews</h3>
+		<div class="review-header" >
+			<h3>Bean dripper reviews</h3>
+			<p> Unsure? Check out what others say! </p>
+		</div>
 		<div class="container">
 			<section class="review-item" id="review-one">
 				<p class="review-name">Katie Lane</p>
+				<p class="review-flavour" >Fish:</p>
+				<p class="review-underline-txt">Sleepy Dose</p>
 				<p class="review-rating">&#9733;&#9733;&#9733;&#9733;</p>
-				<p>
+				<p class="review-content">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 				</p>
@@ -13,7 +18,7 @@
 			<section class="review-item" id="review-two">
 				<p class="review-name">John Andrews</p>
 				<p class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-				<p>
+				<p class="review-content">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 				</p>
@@ -21,7 +26,7 @@
 			<section class="review-item" id="review-two">
 				<p class="review-name">Andrea Smithers</p>
 				<p class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-				<p>
+				<p class="review-content">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 				</p>
@@ -37,24 +42,54 @@ export default {
 </script>
 
 <style scoped lang="scss">
+	$red: #e0785f;
+	$white: #f4f1de;
+	$lightBlue: #e8f0ff;
+	$darkBlue: #3d405b;
+	$green: #81b29a;
+	$beige: #f2cc8f;
+
+	@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+	
 .Review {
+	font-family: 'Raleway', sans-serif;
 	overflow-x: scroll;
 	white-space: nowrap;
+	color: $darkBlue;
+	text-align: left;
+	padding-left: 1rem;
+	.review-header {
+		h3 {
+			line-height: 23px;
+			font-style: bold;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 23px;
+		}
+	}
+	.review-content {
+		font-style: italic;
+	}
 
+	.review-underline-txt {
+		text-decoration: underline;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	.review-flavour {
+		font-weight: 800;
+	}
 	.container {
 		overflow-x: auto;
 		overflow-y: hidden;
 		.review-item {
-			background-color: pink;
 			display: inline-block;
 			width: 250px;
 			vertical-align: top;
 			white-space: initial;
-			padding: 10px;
-
-			margin-right: 10px;
-			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-			margin: 10px 10px 10px 0;
+			margin-right: 1rem;
 		}
 	}
 }
