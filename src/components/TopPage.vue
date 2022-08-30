@@ -48,7 +48,6 @@ $beige: #f2cc8f;
 			width: 100%;
 			height: 50vh;
 			object-fit: contain;
-			margin: 0 auto;
 		}
 	}
 
@@ -65,13 +64,14 @@ $beige: #f2cc8f;
 		display: inline-block;
 		margin: 0;
 		padding: 0;
+		width: 100%;
 	}
 	p {
 		background-color: pink;
 		margin-bottom: 5em;
 	}
 	.img-small {
-		max-height: 11em;
+	float: left;
 	}
 }
 </style>
