@@ -10,11 +10,29 @@
 		</div>
 		
 		<div class="wheel banner" >
-			<div class="banner img">
-				<img class="img-small" src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
+			<div class="slide-item">
+				<div class="slide-img">
+					<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
+				</div>
+				<div class="slide-txt">
+					<p> Sick of the coffee taste? </p>
+				</div>
 			</div>
-			<div class="banner" id="txt">
-				<p> Sick of the coffee taste? </p>
+			<div class="slide-item">
+				<div class="slide-img">
+					<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
+				</div>
+				<div class="slide-txt">
+					<p> Sick of the coffee taste? </p>
+				</div>
+			</div>
+			<div class="slide-item">
+				<div class="slide-img">
+					<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
+				</div>
+				<div class="slide-txt">
+					<p> Sick of the coffee taste? </p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -66,41 +84,30 @@ $beige: #f2cc8f;
 		padding: 0;
 		width: 100%;
 	}
-	p {
-		background-color: pink;
-		margin-bottom: 5em;
-		padding-right: 1em;
-		float: right;
-		display: inline-block;
-	}
-	.img-small {
-		float: left;
-		display: inline-block;
-		width: 50%;
-	}
+
 	.wheel {
-        padding-top: 2em;
 		overflow-x: auto;
 		overflow-y: hidden;
-		white-space: nowrap;
-		.item {
-			display: inline-block;
-			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-			margin: 10px 10px 10px 0;
+		width: 100%;
+		display: flex;
+		flex: none;
+		flex-flow: row nowrap;
+		scroll-snap-type: x mandatory;
+	}
+	.slide-item {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		min-width: 100%;
+		scroll-snap-align: center;
 
-			img {
-				display: inline-block;
-				height: 150px;
-				width: 150px;
-				padding: 10px;
-			}
-			p {
-				height: 150px;
-				width: 150px;
-				display: inline-block;
-				vertical-align: top;
-				white-space: initial;
-			}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		.slide-txt {
+			display: grid;
+			align-items: center;
+			padding: 42px;
 		}
 	}
 }
