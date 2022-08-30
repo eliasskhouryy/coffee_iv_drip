@@ -1,11 +1,8 @@
 <template>
     <form action="#" @submit.prevent="onSubmit">
-      <p v-if="errorsPresent" class="error"> Please check the form for errors </p>
-        <label>
-            Email:
-        </label>
+        <label> Email: </label>
         <input type="email" placeholder="john@ga.co" v-model="email" required/>
-        <button>Submit</button>
+        <input type="submit"/>
     </form>
 </template>
 
