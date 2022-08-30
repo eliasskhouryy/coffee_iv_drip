@@ -16,6 +16,5 @@
 <style scoped lang="scss">
     .container {
         background-color: pink;
-        padding-top: 5em;
     }
 </style>
