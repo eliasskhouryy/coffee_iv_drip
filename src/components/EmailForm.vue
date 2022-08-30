@@ -41,6 +41,7 @@ export default {
 					email: this.email,
 				})
 				.then((this.email = ''), (this.name = ''));
+				alert("sign up successful");
 		},
 	},
 };
