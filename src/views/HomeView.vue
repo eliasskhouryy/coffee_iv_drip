@@ -4,6 +4,7 @@
 		<div class="home">
 			<div class="box page1">
 				<TopPage />
+				<DripListInfo />
 			</div>
 			<div class="box page2">
 				<WheelSection />
@@ -21,6 +22,7 @@
 // @ is an alias to /src
 import TopPage from '@/components/TopPage.vue';
 import WheelSection from '@/components/Wheel.vue';
+import DripListInfo from '@/components/DripListInfo.vue';
 import EmailForm from '@/components/EmailForm.vue';
 import NavBar from '@/components/NavBar.vue';
 import ReviewList from '@/components/ReviewList.vue';
