@@ -5,13 +5,16 @@
 			<div class="box page1">
 				<TopPage />
 			</div>
-			<div class="box page3">dummy text</div>
+			<div class="box page2">
+				<ReviewList />
+			</div>
 			<div class="box page3">
 				<EmailForm />
 			</div>
 			<button>Subscribe</button>
 		</div>
 	</div>
+	a6c0f7d72fa769e97ae208ed20568345f27
 </template>
 
 <script>
@@ -19,12 +22,15 @@
 import TopPage from '@/components/TopPage.vue';
 import EmailForm from '@/components/EmailForm.vue';
 import NavBar from '@/components/NavBar.vue';
+import ReviewList from '@/components/ReviewList.vue';
+
 export default {
 	name: 'HomeView',
 	components: {
 		NavBar,
 		TopPage,
 		EmailForm,
+		ReviewList,
 	},
 	data: function () {
 		return {
