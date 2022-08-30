@@ -35,6 +35,9 @@
 				</div>
 			</div>
 		</div>
+		<div class="title hidden">
+			<h3>Why IV Coffee Drip?</h3>
+		</div>
 	</div>
 </template>
 
@@ -75,6 +78,9 @@ $beige: #f2cc8f;
 		text-align: center;
 		color: $darkBlue;
 		padding: 1px 0;
+		&.hidden {
+			color: $beige;
+		}
 	}
 
 	.banner {
