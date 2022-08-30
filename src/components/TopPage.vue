@@ -8,8 +8,8 @@
 		<div class="title">
 			<h3>Why IV Coffee Drip?</h3>
 		</div>
-
-		<div class="banner" >
+		
+		<div class="wheel banner" >
 			<div class="banner img">
 				<img class="img-small" src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
 			</div>
@@ -69,9 +69,39 @@ $beige: #f2cc8f;
 	p {
 		background-color: pink;
 		margin-bottom: 5em;
+		padding-right: 1em;
+		float: right;
+		display: inline-block;
 	}
 	.img-small {
-	float: left;
+		float: left;
+		display: inline-block;
+		width: 50%;
+	}
+	.wheel {
+        padding-top: 2em;
+		overflow-x: auto;
+		overflow-y: hidden;
+		white-space: nowrap;
+		.item {
+			display: inline-block;
+			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+			margin: 10px 10px 10px 0;
+
+			img {
+				display: inline-block;
+				height: 150px;
+				width: 150px;
+				padding: 10px;
+			}
+			p {
+				height: 150px;
+				width: 150px;
+				display: inline-block;
+				vertical-align: top;
+				white-space: initial;
+			}
+		}
 	}
 }
 </style>
