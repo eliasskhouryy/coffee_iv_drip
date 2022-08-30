@@ -14,7 +14,6 @@
 			<button>Subscribe</button>
 		</div>
 	</div>
-	a6c0f7d72fa769e97ae208ed20568345f27
 </template>
 
 <script>
