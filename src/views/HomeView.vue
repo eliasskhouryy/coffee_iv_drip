@@ -5,10 +5,13 @@
 			<div class="box page1">
 				<TopPage />
 			</div>
-			<div class="box page2">
+      <div class="box page2">
+        <WheelSection />
+      </div>
+			<div class="box page3">
 				<ReviewList />
 			</div>
-			<div class="box page3">
+			<div class="box page4">
 				<EmailForm />
 			</div>
 			<button>Subscribe</button>
@@ -19,6 +22,7 @@
 <script>
 // @ is an alias to /src
 import TopPage from '@/components/TopPage.vue';
+import WheelSection from '@/components/Wheel.vue'
 import EmailForm from '@/components/EmailForm.vue';
 import NavBar from '@/components/NavBar.vue';
 import ReviewList from '@/components/ReviewList.vue';
@@ -30,6 +34,7 @@ export default {
 		TopPage,
 		EmailForm,
 		ReviewList,
+    WheelSection,
 	},
 	data: function () {
 		return {

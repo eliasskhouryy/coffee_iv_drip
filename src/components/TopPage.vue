@@ -16,25 +16,11 @@
 			</div>
 			<div></div>
 		</div>
-
-		<div class="wheel">
-			<div class="item">
-				<img src="https://i.pinimg.com/originals/b9/58/fe/b958fef3d6f8c001e321f2fe19dbdc81.jpg" alt="" class="smallImage" />
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ad harum fugit tempora reprehenderit</p>
-			</div>
-			<div class="item">
-				<img src="https://i.pinimg.com/originals/b9/58/fe/b958fef3d6f8c001e321f2fe19dbdc81.jpg" alt="" class="smallImage" />
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ad harum fugit tempora reprehenderit</p>
-			</div>
-			<div class="item">
-				<img src="https://i.pinimg.com/originals/b9/58/fe/b958fef3d6f8c001e321f2fe19dbdc81.jpg" alt="" class="smallImage" />
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ad harum fugit tempora reprehenderit</p>
-			</div>
-		</div>
 	</div>
 </template>
 
 <script>
+
 export default {
 	name: 'TopPage',
 	props: {
@@ -53,7 +39,6 @@ $green: #81b29a;
 $beige: #f2cc8f;
 
 .topPage {
-	overflow-x: scroll;
 	.topPart {
 		h1 {
 			color: $darkBlue;
