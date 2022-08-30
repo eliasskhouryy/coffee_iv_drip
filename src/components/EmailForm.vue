@@ -15,7 +15,6 @@
 
 <script>
 import db from '../firestoreInit';
-
 export default {
 	name: 'email-form',
 	data: function () {
