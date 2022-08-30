@@ -1,29 +1,27 @@
 <template>
 	<div class="topPage">
 		<div class="topPart">
-			<img class="bigImage" src="../assets/main.jpg" alt="Coffeeholic" />
+			<h1> Coffee IV drip </h1>
+			<img class="bigImage" src="../assets/main-cat-iv.png" alt="Coffeeholic cat with bean-iv drip" />
 		</div>
+
 		<div class="title">
 			<h3>Why IV Coffee Drip?</h3>
 		</div>
-		<div class="wheel">
-			<div class="item">
-				<img src="https://i.pinimg.com/originals/b9/58/fe/b958fef3d6f8c001e321f2fe19dbdc81.jpg" alt="" class="smallImage" />
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ad harum fugit tempora reprehenderit</p>
+		
+		<div class="wheel banner" >
+			<div class="banner img">
+				<img class="img-small" src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
 			</div>
-			<div class="item">
-				<img src="https://i.pinimg.com/originals/b9/58/fe/b958fef3d6f8c001e321f2fe19dbdc81.jpg" alt="" class="smallImage" />
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ad harum fugit tempora reprehenderit</p>
-			</div>
-			<div class="item">
-				<img src="https://i.pinimg.com/originals/b9/58/fe/b958fef3d6f8c001e321f2fe19dbdc81.jpg" alt="" class="smallImage" />
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ad harum fugit tempora reprehenderit</p>
+			<div class="banner" id="txt">
+				<p> Sick of the coffee taste? </p>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+
 export default {
 	name: 'TopPage',
 	props: {
@@ -42,25 +40,46 @@ $green: #81b29a;
 $beige: #f2cc8f;
 
 .topPage {
-	overflow-x: scroll;
-	color: $darkBlue;
 	.topPart {
+		h1 {
+			color: $darkBlue;
+		}
 		img.bigImage {
 			width: 100%;
 			height: 50vh;
 			object-fit: contain;
-			margin: 0 auto;
 		}
 	}
 
 	.title {
-		background-color: $darkBlue;
-		color: white;
-		border-radius: 5px;
+		width: 100%;
+		background-color: $beige;
+		text-align: center;
+		color: $darkBlue;
 		padding: 1px 0;
 	}
 
+	.banner {
+		padding-top: 1em;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	p {
+		background-color: pink;
+		margin-bottom: 5em;
+		padding-right: 1em;
+		float: right;
+		display: inline-block;
+	}
+	.img-small {
+		float: left;
+		display: inline-block;
+		width: 50%;
+	}
 	.wheel {
+        padding-top: 2em;
 		overflow-x: auto;
 		overflow-y: hidden;
 		white-space: nowrap;
@@ -74,10 +93,8 @@ $beige: #f2cc8f;
 				height: 150px;
 				width: 150px;
 				padding: 10px;
-				margin: auto auto;
 			}
 			p {
-				padding: 10px;
 				height: 150px;
 				width: 150px;
 				display: inline-block;
