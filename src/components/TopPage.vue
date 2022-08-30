@@ -10,11 +10,12 @@
 		</div>
 
 		<div class="banner" >
-		<h1> test </h1>
-			<div id="banner-img">
-				<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
+			<div class="banner img">
+				<img class="img-small" src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
 			</div>
-			<div></div>
+			<div class="banner" id="txt">
+				<p> Sick of the coffee taste? </p>
+			</div>
 		</div>
 	</div>
 </template>
@@ -52,38 +53,25 @@ $beige: #f2cc8f;
 	}
 
 	.title {
+		width: 100%;
 		background-color: $beige;
 		text-align: center;
 		color: $darkBlue;
-		border-radius: 5px;
 		padding: 1px 0;
 	}
 
-	.wheel {
-		overflow-x: auto;
-		overflow-y: hidden;
-		white-space: nowrap;
-		.item {
-			display: inline-block;
-			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-			margin: 10px 10px 10px 0;
-
-			img {
-				display: inline-block;
-				height: 150px;
-				width: 150px;
-				padding: 10px;
-				margin: auto auto;
-			}
-			p {
-				padding: 10px;
-				height: 150px;
-				width: 150px;
-				display: inline-block;
-				vertical-align: top;
-				white-space: initial;
-			}
-		}
+	.banner {
+		padding-top: 1em;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+	p {
+		background-color: pink;
+		margin-bottom: 5em;
+	}
+	.img-small {
+		max-height: 11em;
 	}
 }
 </style>
