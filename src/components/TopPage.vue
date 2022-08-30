@@ -1,11 +1,22 @@
 <template>
 	<div class="topPage">
 		<div class="topPart">
-			<img class="bigImage" src="../assets/main.jpg" alt="Coffeeholic" />
+			<h1> Coffee IV drip </h1>
+			<img class="bigImage" src="../assets/main-cat-iv.png" alt="Coffeeholic cat with bean-iv drip" />
 		</div>
+
 		<div class="title">
 			<h3>Why IV Coffee Drip?</h3>
 		</div>
+
+		<div class="banner" >
+		<h1> test </h1>
+			<div id="banner-img">
+				<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
+			</div>
+			<div></div>
+		</div>
+
 		<div class="wheel">
 			<div class="item">
 				<img src="https://i.pinimg.com/originals/b9/58/fe/b958fef3d6f8c001e321f2fe19dbdc81.jpg" alt="" class="smallImage" />
@@ -43,8 +54,10 @@ $beige: #f2cc8f;
 
 .topPage {
 	overflow-x: scroll;
-	color: $darkBlue;
 	.topPart {
+		h1 {
+			color: $darkBlue;
+		}
 		img.bigImage {
 			width: 100%;
 			height: 50vh;
@@ -54,8 +67,9 @@ $beige: #f2cc8f;
 	}
 
 	.title {
-		background-color: $darkBlue;
-		color: white;
+		background-color: $beige;
+		text-align: center;
+		color: $darkBlue;
 		border-radius: 5px;
 		padding: 1px 0;
 	}
