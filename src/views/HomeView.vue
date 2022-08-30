@@ -5,13 +5,11 @@
 			<div class="box page1">
 				<TopPage />
 			</div>
-      <div class="box page2">
-        <WheelSection />
-      </div>
+			<div class="box page2">
+				<WheelSection />
+			</div>
 			<div class="box page3">
 				<ReviewList />
-			</div>
-			<div class="box page4">
 				<EmailForm />
 			</div>
 			<button>Subscribe</button>
@@ -22,7 +20,7 @@
 <script>
 // @ is an alias to /src
 import TopPage from '@/components/TopPage.vue';
-import WheelSection from '@/components/Wheel.vue'
+import WheelSection from '@/components/Wheel.vue';
 import EmailForm from '@/components/EmailForm.vue';
 import NavBar from '@/components/NavBar.vue';
 import ReviewList from '@/components/ReviewList.vue';
@@ -34,7 +32,7 @@ export default {
 		TopPage,
 		EmailForm,
 		ReviewList,
-    WheelSection,
+		WheelSection,
 	},
 	data: function () {
 		return {
@@ -48,14 +46,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 * {
 	box-sizing: border-box;
 }
 
 .home {
-	margin-top: 50px;
+	margin-top: 100px;
 	.box {
+		margin-top: 100px;
+
 		height: 100vh;
 		max-width: 100vw;
 	}

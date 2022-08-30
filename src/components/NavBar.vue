@@ -11,8 +11,8 @@
 				<li><a href="">Home</a></li>
 				<li><a href="">Home</a></li>
 			</ul>
-				<h3 id="heading-txt" >Bean Dripper</h3>
-				<img id="heading-icon" src="../assets/bean-icon.png" alt="coffee bean icon" />
+			<h3 id="heading-txt">Bean Dripper</h3>
+			<img id="heading-icon" src="../assets/bean-icon.png" alt="coffee bean icon" />
 		</div>
 	</nav>
 </template>
@@ -39,10 +39,6 @@ nav {
 	width: 100%;
 	padding: 30px;
 
-	h3 {
-		display: inline-block;
-		margin: 0;
-	}
 	a {
 		text-decoration: none;
 	}
@@ -126,6 +122,16 @@ nav {
 	.menu__item:hover {
 		background-color: #eaffd0;
 		color: $darkBlue;
+	}
+	h3 {
+		display: inline-block;
+		margin: 0;
+		vertical-align: top;
+		font-size: 20px;
+	}
+	img {
+		display: inline-block;
+		width: 30px;
 	}
 }
 </style>
