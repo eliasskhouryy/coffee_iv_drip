@@ -7,7 +7,7 @@
       dummy text
     </div>
     <div class="box page3">
-      fummy text
+      <EmailForm />
     </div>
     
   </div>
@@ -16,21 +16,22 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
+import EmailForm from '@/components/EmailForm.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    HelloWorld,
+    EmailForm
   },
   data: function () {
     return {
       variable1: '',
     }
   },
-  methods: {
-    
-  },
 }
+
+
 </script>
 
 <style lang="scss">
