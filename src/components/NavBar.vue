@@ -1,20 +1,4 @@
 <template>
-	<!-- <nav>
-		<div class="hamburger-menu">
-			<input id="menu__toggle" type="checkbox" />
-			<label class="menu__btn" for="menu__toggle">
-				<span></span>
-			</label>
-			<ul class="menu__box">
-				<li><a href="">Home</a></li>
-				<li><a href="">Home</a></li>
-				<li><a href="">Home</a></li>
-				<li><a href="">Home</a></li>
-			</ul>
-			<h3 id="heading-txt">Bean Dripper</h3>
-			<img id="heading-icon" src="../assets/bean-icon.png" alt="coffee bean icon" />
-		</div>
-	</nav> -->
 	<b-navbar toggleable type="dark" variant="dark" class="bar">
 		<div class="group">
 			<b-navbar-toggle target="navbar-toggle-collapse" class="toggler">
