@@ -1,5 +1,5 @@
 <template>
-	<nav>
+	<!-- <nav>
 		<div class="hamburger-menu">
 			<input id="menu__toggle" type="checkbox" />
 			<label class="menu__btn" for="menu__toggle">
@@ -14,7 +14,25 @@
 			<h3 id="heading-txt">Bean Dripper</h3>
 			<img id="heading-icon" src="../assets/bean-icon.png" alt="coffee bean icon" />
 		</div>
-	</nav>
+	</nav> -->
+	<b-navbar toggleable type="dark" variant="dark" class="bar">
+		<div class="group">
+			<b-navbar-toggle target="navbar-toggle-collapse" class="toggler">
+				<template #hamburger="{ expanded }" class="lines">
+					<b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
+					<b-icon v-else icon="chevron-bar-down"></b-icon>
+				</template>
+			</b-navbar-toggle>
+
+			<b-collapse id="navbar-toggle-collapse" is-nav class="collapse">
+				<b-navbar-nav class="ml-auto">
+					<b-nav-item href="#">Home</b-nav-item>
+					<b-nav-item href="#">Subscribe</b-nav-item>
+				</b-navbar-nav>
+			</b-collapse>
+			<b-navbar-brand href="#" class="title">Bean Dripper <img id="heading-icon" src="../assets/bean-icon.png" alt="coffee bean icon" /></b-navbar-brand>
+		</div>
+	</b-navbar>
 </template>
 
 <script>
@@ -30,6 +48,34 @@ $lightBlue: #e8f0ff;
 $darkBlue: #3d405b;
 $green: #81b29a;
 $beige: #f2cc8f;
+
+.bar {
+	display: inline;
+	background-color: $lightBlue !important;
+	padding: 17px;
+	.toggler {
+		display: inline-block;
+		vertical-align: top;
+		background-color: $darkBlue;
+		color: $darkBlue !important;
+		float: left;
+
+		.lines {
+			background-color: $darkBlue !important;
+		}
+	}
+
+	.title {
+		display: inline-block;
+		vertical-align: top;
+		color: $darkBlue;
+		font-size: 22px;
+	}
+	.collapse a {
+		color: $darkBlue !important;
+		margin-right: 60px;
+	}
+}
 
 nav {
 	position: fixed;
