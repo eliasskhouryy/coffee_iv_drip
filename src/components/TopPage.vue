@@ -58,12 +58,13 @@ $lightBlue: #e8f0ff;
 $darkBlue: #3d405b;
 $green: #81b29a;
 $beige: #f2cc8f;
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+   color: $darkBlue;
+   font-family: 'Raleway', sans-serif;
+}
 .topPage {
 	.topPart {
-		h1 {
-			color: $darkBlue;
-		}
 		img.bigImage {
 			width: 100%;
 			height: 50vh;
