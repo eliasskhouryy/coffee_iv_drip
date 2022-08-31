@@ -1,25 +1,29 @@
 <template>
-	<form action="#" @submit.prevent="onSubmit">
-		<section>
-			<h3>Subscribe to our newsletter</h3>
-			<p>And be the first to recieve exclusive offers on special powers.</p>
-		</section>
-		<select name="" id="">
-			<option value="">Daily</option>
-			<option value="">Weekly</option>
-			<option value="">Monthly</option>
-			<option value="">Quaterly</option>
-		</select>
-		<label>
-			Full Name
-			<input type="text" placeholder="John Jones" v-model="name" required  minlength="3" />
-		</label>
-		<label>
-			Email:
-			<input type="email" placeholder="john@ga.co" v-model="email" required />
-		</label>
-		<input class="button" type="submit" />
-	</form>
+	<div class="pre-submit-page">
+		<form action="/congratulations" onSubmit="onSubmit">
+			<section>
+				<h3>Subscribe to our newsletter</h3>
+				<p>And be the first to recieve exclusive offers on special powers.</p>
+			</section>
+			<select name="" id="">
+				<option value="">Daily</option>
+				<option value="">Weekly</option>
+				<option value="">Monthly</option>
+				<option value="">Quaterly</option>
+			</select>
+			<label>
+				Full Name
+				<input type="text" placeholder="John Jones" v-model="name" required  minlength="3" />
+			</label>
+			<label>
+				Email:
+				<input type="email" placeholder="john@ga.co" v-model="email" required />
+			</label>
+			<input class="button" type="submit" />
+			<!-- <label> By clicking this, you agree to our Terms of Service and Policy</label>
+			<input type="checkbox" id="agreement-checkbox" name="agreement" /> -->
+		</form>
+	</div>
 </template>
 
 <script>
@@ -94,5 +98,8 @@ form {
 		border-radius: 5px;
 		font-weight: 700;
 	}
+	// #agreement-checkbox {
+	// 	float: right;
+	// }
 }
 </style>
