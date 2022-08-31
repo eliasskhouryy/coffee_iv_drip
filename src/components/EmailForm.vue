@@ -58,6 +58,12 @@ $lightBlue: #e8f0ff;
 $darkBlue: #3d405b;
 $green: #81b29a;
 $beige: #f2cc8f;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+	color: $darkBlue;
+    font-family: 'Raleway', sans-serif;
+}
 form {
 	background-color: $beige;
 	width: 100vw;

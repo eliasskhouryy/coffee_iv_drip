@@ -1,7 +1,7 @@
 <template>
 	<div class="topPage">
 		<div class="topPart">
-			<h1>Coffee IV drip</h1>
+			<h1>Super power coffee IV drip!</h1>
 			<img class="bigImage" src="../assets/main-cat-iv.png" alt="Coffeeholic cat with bean-iv drip" />
 		</div>
 
@@ -99,11 +99,17 @@ $beige: #f2cc8f;
 	margin-left: 20px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+	color: $darkBlue;
+	font-family: 'Raleway', sans-serif;
+}
+h1 {
+	font-weight: 700;
+	font-size: 25px;
+}
 .topPage {
 	.topPart {
-		h1 {
-			color: $darkBlue;
-		}
 		img.bigImage {
 			width: 100%;
 			height: 50vh;
