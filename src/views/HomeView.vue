@@ -4,16 +4,17 @@
 		<div class="home">
 			<div class="box page1">
 				<TopPage />
-				<DripListInfo />
 			</div>
 			<div class="box page2">
+				<DripListInfo />
+
 				<WheelSection />
 			</div>
 			<div class="box page3">
 				<ReviewList />
 				<EmailForm />
 			</div>
-			<button>Subscribe</button>
+			<button @click="buttonShower">Subscribe</button>
 		</div>
 	</div>
 </template>
@@ -43,19 +44,21 @@ export default {
 		};
 	},
 	methods: {
-		buttonShower: function () {},
+		buttonShower: function () {
+			window.scrollTo(0, document.body.scrollHeight);
+		},
 	},
 };
 </script>
 
 <style scoped lang="scss">
-	$red: #e0785f;
-	$white: #f4f1de;
-	$lightBlue: #e8f0ff;
-	$darkBlue: #3d405b;
-	$green: #81b29a;
-	$beige: #f2cc8f;
-	
+$red: #e0785f;
+$white: #f4f1de;
+$lightBlue: #e8f0ff;
+$darkBlue: #3d405b;
+$green: #81b29a;
+$beige: #f2cc8f;
+
 * {
 	box-sizing: border-box;
 }
@@ -70,15 +73,17 @@ export default {
 	}
 	button {
 		position: fixed;
-		right: 0px;
-		bottom: 30px;
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
+		right: 20px;
+		bottom: 20px;
+
 		z-index: 10;
-		height: 30px;
 		border-radius: 5px;
 		border: none;
-		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+		background-color: $darkBlue;
+		color: $white;
+		padding: 8px 14px;
+		font-weight: 600;
 	}
 }
 </style>

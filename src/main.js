@@ -2,12 +2,17 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import VueGtag from 'vue-gtag';
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 
 Vue.config.productionTip = false;
+Vue.use(BootstrapVue);
+Vue.use(IconsPlugin);
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 Vue.use(VueGtag, {
-	config: { id: "G-99S6JH47NV" }
-})
+	config: { id: 'G-99S6JH47NV' },
+});
 
 new Vue({
 	router,

@@ -5,6 +5,9 @@
 </template>
 
 <style lang="scss">
+* {
+	box-sizing: border-box;
+}
 $red: #e0785f;
 $white: #f4f1de;
 $lightBlue: #e8f0ff;
