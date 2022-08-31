@@ -12,7 +12,7 @@
 		</select>
 		<label>
 			Full Name
-			<input type="text" placeholder="John Jones" v-model="name" required />
+			<input type="text" placeholder="John Jones" v-model="name" required  minlength="3" />
 		</label>
 		<label>
 			Email:
