@@ -7,8 +7,8 @@
 			</div>
 			<div class="box page2">
 				<DripListInfo />
-
 				<WheelSection />
+				<DeliverySection />
 			</div>
 			<div class="box page3">
 				<ReviewList />
@@ -23,6 +23,7 @@
 // @ is an alias to /src
 import TopPage from '@/components/TopPage.vue';
 import WheelSection from '@/components/Wheel.vue';
+import DeliverySection from '@/components/DeliverySection.vue';
 import DripListInfo from '@/components/DripListInfo.vue';
 import EmailForm from '@/components/EmailForm.vue';
 import NavBar from '@/components/NavBar.vue';
@@ -37,6 +38,7 @@ export default {
 		ReviewList,
 		WheelSection,
 		DripListInfo,
+		DeliverySection,
 	},
 	data: function () {
 		return {
@@ -58,9 +60,12 @@ $lightBlue: #e8f0ff;
 $darkBlue: #3d405b;
 $green: #81b29a;
 $beige: #f2cc8f;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 * {
 	box-sizing: border-box;
+	color: $darkBlue;
+    font-family: 'Raleway', sans-serif;
 }
 
 .home {

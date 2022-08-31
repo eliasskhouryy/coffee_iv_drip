@@ -43,20 +43,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
-	$red: #e0785f;
-	$white: #f4f1de;
-	$lightBlue: #e8f0ff;
-	$darkBlue: #3d405b;
-	$green: #81b29a;
-	$beige: #f2cc8f;
-
-	@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-	
+$red: #e0785f;
+$white: #f4f1de;
+$lightBlue: #e8f0ff;
+$darkBlue: #3d405b;
+$green: #81b29a;
+$beige: #f2cc8f;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+   color: $darkBlue;
+   font-family: 'Raleway', sans-serif;
+}
 .Review {
-	font-family: 'Raleway', sans-serif;
 	overflow-x: scroll;
 	white-space: nowrap;
-	color: $darkBlue;
 	text-align: left;
 	padding-left: 1rem;
 	.review-header {

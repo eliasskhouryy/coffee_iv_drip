@@ -1,16 +1,16 @@
 <template>
-	<div class="dripListInfo">
-		<h3>What's in our power drip list?</h3>
-	</div>
+    <div>
+        <h1> hi </h1>
+    </div>
 </template>
 
 <script>
-export default {
-	name: 'DripListInfo',
-	props: {
-		msg: String,
-	},
-};
+    export default {
+        name: 'delivery-section',
+        props: {
+            msg: String,
+        },
+    };
 </script>
 
 <style scoped lang="scss">
@@ -26,10 +26,5 @@ $beige: #f2cc8f;
    background-color: $beige; 
    color: $darkBlue;
    font-family: 'Raleway', sans-serif;
-}
-.dripListInfo {
-	h3 {
-		padding: 20px;
-	}
 }
 </style>
