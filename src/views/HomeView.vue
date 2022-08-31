@@ -4,9 +4,10 @@
 		<div class="home">
 			<div class="box page1">
 				<TopPage />
-				<DripListInfo />
 			</div>
 			<div class="box page2">
+				<DripListInfo />
+
 				<WheelSection />
 			</div>
 			<div class="box page3">

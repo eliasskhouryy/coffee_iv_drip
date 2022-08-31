@@ -26,11 +26,12 @@
 
 			<b-collapse id="navbar-toggle-collapse" is-nav class="collapse">
 				<b-navbar-nav class="ml-auto">
-					<b-nav-item href="#">Home</b-nav-item>
-					<b-nav-item href="#">Subscribe</b-nav-item>
+					<b-nav-item href="#">Powers</b-nav-item>
+					<b-nav-item href="#">Reviews</b-nav-item>
+					<b-nav-item href="#">Delivery</b-nav-item>
 				</b-navbar-nav>
 			</b-collapse>
-			<b-navbar-brand href="#" class="title">Bean Dripper <img id="heading-icon" src="../assets/bean-icon.png" alt="coffee bean icon" /></b-navbar-brand>
+			<b-navbar-brand @click="scrollTop" href="#" class="title">Bean Dripper <img id="heading-icon" src="../assets/bean-icon.png" alt="coffee bean icon" /></b-navbar-brand>
 		</div>
 	</b-navbar>
 </template>
@@ -38,6 +39,17 @@
 <script>
 export default {
 	name: 'nav-bar',
+	methods: {
+		scrollBottom: function () {
+			window.scrollTo(1000, document.body.scrollHeight);
+		},
+		scrollTop: function () {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth',
+			});
+		},
+	},
 };
 </script>
 

@@ -1,21 +1,21 @@
 <template>
 	<div class="topPage">
 		<div class="topPart">
-			<h1> Coffee IV drip </h1>
+			<h1>Coffee IV drip</h1>
 			<img class="bigImage" src="../assets/main-cat-iv.png" alt="Coffeeholic cat with bean-iv drip" />
 		</div>
 
 		<div class="title">
 			<h3>Why IV Coffee Drip?</h3>
 		</div>
-		
-		<div class="wheel banner" >
+
+		<div class="wheel banner">
 			<div class="slide-item">
 				<div class="slide-img">
 					<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
 				</div>
 				<div class="slide-txt">
-					<p> Sick of the coffee taste? </p>
+					<p>Sick of the coffee taste?</p>
 				</div>
 			</div>
 			<div class="slide-item">
@@ -23,7 +23,7 @@
 					<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
 				</div>
 				<div class="slide-txt">
-					<p> Sick of the coffee taste? </p>
+					<p>Sick of the coffee taste?</p>
 				</div>
 			</div>
 			<div class="slide-item">
@@ -31,7 +31,7 @@
 					<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
 				</div>
 				<div class="slide-txt">
-					<p> Sick of the coffee taste? </p>
+					<p>Sick of the coffee taste?</p>
 				</div>
 			</div>
 		</div>
@@ -42,7 +42,6 @@
 </template>
 
 <script>
-
 export default {
 	name: 'TopPage',
 	props: {
@@ -68,18 +67,26 @@ $beige: #f2cc8f;
 		img.bigImage {
 			width: 100%;
 			height: 50vh;
-			object-fit: contain;
+			object-fit: fill;
 		}
 	}
 
 	.title {
+		display: inline-block;
 		width: 100%;
 		background-color: $beige;
 		text-align: center;
 		color: $darkBlue;
-		padding: 1px 0;
+		padding: 15px 0;
+		margin: auto 0;
+		vertical-align: middle;
 		&.hidden {
 			color: $beige;
+		}
+		h3 {
+			display: inline-block;
+			vertical-align: middle;
+			margin: auto 0;
 		}
 	}
 
