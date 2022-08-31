@@ -13,7 +13,7 @@
 			</select>
 			<label>
 				Full Name
-				<input type="text" placeholder="John Jones" v-model="name" required  minlength="3" />
+				<input type="text" placeholder="John Jones" v-model="name" required minlength="3" />
 			</label>
 			<label>
 				Email:
@@ -38,14 +38,14 @@ export default {
 	},
 	methods: {
 		onSubmit: function () {
-			this.$gtag.event('sign-up')
+			this.$gtag.event('sign-up');
 			db.collection('users')
 				.add({
 					name: this.name,
 					email: this.email,
 				})
 				.then((this.email = ''), (this.name = ''));
-				alert("sign up successful");
+			alert('sign up successful');
 		},
 	},
 };
