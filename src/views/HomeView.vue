@@ -67,8 +67,6 @@ $beige: #f2cc8f;
 	margin-top: 100px;
 	.box {
 		margin-top: 100px;
-
-		height: 100vh;
 		max-width: 100vw;
 	}
 	button {
