@@ -16,7 +16,8 @@
     "normalize.css": "^8.0.1",
     "vue": "^2.7.10",
     "vue-gtag": "^1.16.1",
-    "vue-router": "^3.5.1"
+    "vue-router": "^3.5.1",
+    "vue-slick-carousel": "^1.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

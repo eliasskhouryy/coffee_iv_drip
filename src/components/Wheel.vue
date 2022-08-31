@@ -1,18 +1,27 @@
 <template>
-	<div class="WheelSection">
-		<div class="topPart">
-			<div class="wheel">
-				<div class="item">
-					<img src="https://i.pinimg.com/originals/b9/58/fe/b958fef3d6f8c001e321f2fe19dbdc81.jpg" alt="" class="smallImage" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ad harum fugit tempora reprehenderit</p>
-				</div>
-				<div class="item">
-					<img src="https://i.pinimg.com/originals/b9/58/fe/b958fef3d6f8c001e321f2fe19dbdc81.jpg" alt="" class="smallImage" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ad harum fugit tempora reprehenderit</p>
-				</div>
-				<div class="item">
-					<img src="https://i.pinimg.com/originals/b9/58/fe/b958fef3d6f8c001e321f2fe19dbdc81.jpg" alt="" class="smallImage" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ad harum fugit tempora reprehenderit</p>
+	<div>
+		<br />
+		<div class="WheelSection">
+			<div class="topPart">
+				<div class="wheel">
+					<div class="item">
+						<h4>Deadline Dose</h4>
+
+						<img src="../assets/catpost2.png" alt="" class="smallImage" />
+						<p>What was sleep ever good for?</p>
+					</div>
+					<div class="item">
+						<h4>R.I.P Dose</h4>
+						<img src="../assets/catpost1.png" alt="" class="smallImage" />
+						<p>Fake death for 2 days.</p>
+					</div>
+
+					<div class="item">
+						<h4>Invisible Dose</h4>
+
+						<img src="../assets/catpost3.png" alt="" class="smallImage" />
+						<p>Perfect for stalking</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -53,15 +62,6 @@ $beige: #f2cc8f;
 			margin: 0 auto;
 		}
 	}
-
-	.title {
-		background-color: $beige;
-		text-align: center;
-		color: $darkBlue;
-		border-radius: 5px;
-		padding: 1px 0;
-	}
-
 	.wheel {
 		overflow-x: auto;
 		overflow-y: hidden;
@@ -69,25 +69,28 @@ $beige: #f2cc8f;
 		padding-left: 10px;
 		.item {
 			display: inline-block;
-			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 			margin: 10px 10px 10px 0;
+			vertical-align: top;
+
+			h4 {
+				text-align: left;
+				font-size: 18px;
+			}
 
 			img {
 				display: inline-block;
-				height: 150px;
-				width: 150px;
-				object-fit: contain;
-				padding: 10px;
+				height: 230px;
+				width: 230px;
 				margin: auto auto;
+				box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 			}
 			p {
-				padding: 10px;
-				height: 150px;
-				width: 150px;
-				display: inline-block;
-				vertical-align: top;
+				padding-top: 10px;
+				width: 230px;
+				display: block;
 				white-space: initial;
 				line-height: 18px;
+				text-align: left;
 			}
 		}
 	}

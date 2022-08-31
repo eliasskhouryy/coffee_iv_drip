@@ -5,48 +5,82 @@
 			<img class="bigImage" src="../assets/main-cat-iv.png" alt="Coffeeholic cat with bean-iv drip" />
 		</div>
 
-		<div class="title">
-			<h3>Why IV Coffee Drip?</h3>
-		</div>
-
-		<div class="wheel banner">
-			<div class="slide-item">
-				<div class="slide-img">
-					<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
-				</div>
-				<div class="slide-txt">
-					<p>Sick of the coffee taste?</p>
-				</div>
-			</div>
-			<div class="slide-item">
-				<div class="slide-img">
-					<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
-				</div>
-				<div class="slide-txt">
-					<p>Sick of the coffee taste?</p>
-				</div>
-			</div>
-			<div class="slide-item">
-				<div class="slide-img">
-					<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
-				</div>
-				<div class="slide-txt">
-					<p>Sick of the coffee taste?</p>
-				</div>
-			</div>
-		</div>
 		<div class="title hidden">
 			<h3>Why IV Coffee Drip?</h3>
 		</div>
+		<VueSlickCarousel v-bind="settings" class="carousel">
+			<div>
+				<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
+				<p>Sick of the coffee taste?</p>
+			</div>
+			<div>
+				<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
+				<p>Sick of the coffee taste?</p>
+			</div>
+			<div>
+				<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
+				<p>Sick of the coffee taste?</p>
+			</div>
+			<div>
+				<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
+				<p>Sick of the coffee taste?</p>
+			</div>
+			<div>
+				<img src="../assets/yunosleep-meme-cat.png" alt="y u no sleep meme cat" />
+				<p>Sick of the coffee taste?</p>
+			</div>
+		</VueSlickCarousel>
 	</div>
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel';
+
 export default {
 	name: 'TopPage',
 	props: {
 		msg: String,
 	},
+	data: function () {
+		return {
+			settings: {
+				dots: true,
+				arrows: true,
+				infinite: false,
+				speed: 500,
+				slidesToShow: 4,
+				slidesToScroll: 4,
+				initialSlide: 0,
+				responsive: [
+					{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 3,
+							infinite: true,
+							dots: true,
+						},
+					},
+					{
+						breakpoint: 600,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2,
+							initialSlide: 2,
+						},
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+						},
+					},
+				],
+			},
+		};
+	},
+	components: { VueSlickCarousel },
 };
 </script>
 
@@ -58,6 +92,12 @@ $lightBlue: #e8f0ff;
 $darkBlue: #3d405b;
 $green: #81b29a;
 $beige: #f2cc8f;
+
+.carousel {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
 
 .topPage {
 	.topPart {
@@ -76,7 +116,7 @@ $beige: #f2cc8f;
 		width: 100%;
 		background-color: $beige;
 		text-align: center;
-		color: $darkBlue;
+		color: $darkBlue !important;
 		padding: 15px 0;
 		margin: auto 0;
 		vertical-align: middle;

@@ -1,4 +1,5 @@
 <template>
+	<!-- eslint-disable -->
 	<b-navbar toggleable type="dark" variant="dark" class="bar">
 		<div class="group">
 			<b-navbar-toggle target="navbar-toggle-collapse" class="toggler">
@@ -18,6 +19,7 @@
 			<b-navbar-brand @click="scrollTop" href="#" class="title">Bean Dripper <img id="heading-icon" src="../assets/bean-icon.png" alt="coffee bean icon" /></b-navbar-brand>
 		</div>
 	</b-navbar>
+	<!-- eslint-enable -->
 </template>
 
 <script>

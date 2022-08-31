@@ -1,6 +1,6 @@
 <template>
 	<div class="dripListInfo">
-		<h3>What's in our power drip list?</h3>
+		<h3>Wonder what's in our power drip list?</h3>
 	</div>
 </template>
 
@@ -17,6 +17,10 @@ export default {
 .dripListInfo {
 	h3 {
 		padding: 20px;
+		padding-left: 10px;
+		text-align: left;
+		font-size: 20px;
+		font-weight: 500;
 	}
 }
 </style>
