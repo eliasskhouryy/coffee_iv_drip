@@ -6,7 +6,6 @@
 		</div>
 		<div class="container">
 			<section class="review-item" id="review-one">
-				<p class="review-name">Katie Lane</p>
 				<p class="review-flavour" >Fish:</p>
 				<p class="review-underline-txt">Sleepy Dose</p>
 				<p class="review-rating">&#9733;&#9733;&#9733;&#9733;</p>
@@ -16,7 +15,8 @@
 				</p>
 			</section>
 			<section class="review-item" id="review-two">
-				<p class="review-name">John Andrews</p>
+				<p class="review-flavour" >Party Animeow:</p>
+				<p class="review-underline-txt">High like a kite dose</p>
 				<p class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
 				<p class="review-content">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -24,7 +24,8 @@
 				</p>
 			</section>
 			<section class="review-item" id="review-two">
-				<p class="review-name">Andrea Smithers</p>
+				<p class="review-flavour" >Craig:</p>
+				<p class="review-underline-txt">Go Hard Dose</p>
 				<p class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
 				<p class="review-content">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
