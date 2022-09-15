@@ -1,4 +1,7 @@
 # coffee_iv_drip
+A 28 hour long sprint collaboration with the UX design class and SEI54. Two devs one designer
+
+Check out the deployed app [here](https://coffeedrip-65d9f.web.app/)
 
 ## Project setup
 ```
